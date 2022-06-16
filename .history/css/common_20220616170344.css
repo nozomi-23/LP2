@@ -1,0 +1,515 @@
+@charset "UTF-8";
+
+body {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+li {
+  list-style: none;
+}
+/* ===================
+header
+=======================*/
+.header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1%;
+}
+.header_logo {
+  width: 20%;
+}
+.header_logo img {
+  width: 100%;
+  height: 100%;
+}
+.header_nav {
+  width: 70%;
+}
+.header_nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header_nav ul li {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 2%;
+}
+.header_nav ul li:hover {
+  opacity: 0.5;
+}
+.contact {
+  width: 18%;
+  background: #75a9ff;
+  border-radius: 30px;
+  line-height: 3;
+}
+.contact a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* ハンバーガーメニュー 要素を不可視にする*/
+.drawer {
+  visibility: hidden;   
+}
+/* ===================
+共通レイアウト
+=======================*/ 
+.section {
+  padding: 7% 0 ;
+  position: relative;
+}
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+/* ===================
+top
+=======================*/
+.top_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.top_left {
+  width: 50%;
+}
+.font1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.font1 p {
+  font-size: 3.25rem;
+  text-align: center;
+  color: #75a9ff;
+  line-height: 2;
+}
+.font1 small {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.download_wrapper {
+  display: flex;
+  margin: 5% 0;
+}
+.download_app {
+  width: 50%;
+}
+.download_app a {
+  display: flex;
+  justify-content: center;
+}
+.download_app img {
+  width: 60%;
+}
+.download_google {
+  width: 50%;
+}
+.download_google a {
+  display: flex;
+  justify-content: center;
+}
+.download_google img {
+  width: 60%;
+}
+.top_right {
+  width: 40%;
+}
+.top_right img {
+  width: 100%;
+  height: 100%;
+}
+/* ===================
+feature
+=======================*/
+.feature {
+  width: 75%;
+  margin: 0 auto;
+}
+.font2 {
+  font-size: 1.75rem;
+  color: #75a9ff;
+  line-height: 1.5;
+  margin-bottom: 2.5%;
+}
+.font2::after {
+  content: "";
+  background: #75a9ff;
+  height: 2px;
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2%;
+}
+.feature_txt {
+  line-height: 1.8;
+}
+/* ===================
+intro
+=======================*/
+.intro {
+  background: linear-gradient(to bottom, #75a9ff, #f5f6f7);
+  margin-top: 5%;
+}
+.font3 {
+  font-size: 3.25rem;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 1.5%;
+  line-height: 1.5;
+}
+.font3 small {
+  font-size: 1.5rem;
+  display: block;
+}
+.app_all {
+  width: 90%;
+  margin: 0 auto;
+}
+.app_innre {
+  background: linear-gradient(to bottom, #fff, #f5f6f7);
+  border-radius: 30px;
+  padding: 7.5% 5%;
+  margin-top: 5%;
+}
+.app_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.app_left {
+  width: 40%;
+}
+.font4 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  padding: 5%;  
+}
+.font5 {
+  font-size: 1.25rem;
+  margin-bottom: 3%;
+  line-height: 1.5;
+}
+.font5 strong {
+  color: #75a9ff; 
+}
+.descript {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.app_right{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.app_right img {
+  width: 70%;
+}
+.reverse_wrapper {
+  flex-flow: row-reverse;
+}
+.reverse_right {
+  justify-content: flex-start;
+}
+/* ===================
+how
+=======================*/
+.how {
+  background: #f5f6f7;
+}
+.font3_sub {
+  color: #666;
+}
+.how_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5% 0;
+}
+.how_block {
+  width: 35%;
+  border: 3px solid #75a9FF;
+  border-radius: 30px;
+  text-align: center;
+}
+.font4_sub {
+color: #75a9ff;
+padding: unset;
+font-size: 2.25rem;
+}
+.how_list {
+  display: inline-block;
+  width: 50%;
+  margin: 3% 0;
+}
+.how_list li {
+  border-bottom: 2.5px solid #777;
+  padding: 3%;
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: #777;
+}
+.how_list p {
+  font-size: 2rem;
+  padding-top: 5%;
+  font-weight: bold;
+  color: #e65c7a;
+}
+/* ===================
+faq
+=======================*/
+.faq {
+  background: linear-gradient(to bottom, #75a9ff, #f5f6f7);
+}
+.faq_txt {
+  background: #f5f6f7;
+  padding: 7.5%;
+  border-radius: 30px;
+}
+.faq_txt ul {
+  margin-bottom: 5%;
+}
+.faq_txt ul li {
+  line-height: 1.5;
+}
+.faq_txt ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #555;
+  border-radius: 50%;
+  margin-right: 1%;
+}
+.faq_txt ul p {
+  line-height: 2.5;
+}
+.faq_txt ul p strong {
+  color: #75a9ff;
+}
+.btn {
+  width: 25%;
+  margin: 0 auto;
+  line-height: 3;
+}
+.btn a {
+  background-color: #888;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.35rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+/* ===================
+news
+=======================*/
+.news {
+  background: #f5f6f7;
+}
+.news_txt {
+  background-color: #fff;
+  padding: 7.5%;
+  border-radius: 30px;
+}
+.news_txt ul {
+  margin-bottom: 5%;
+}
+.news_txt ul li {
+  line-height: 2.5;
+}
+.news_txt ul li strong {
+  color: #75a9ff;
+}
+.news_txt ul p {
+  line-height: 1.5;
+}
+/* ===================
+contact_btn
+=======================*/
+.contact_btn {
+  background: #f5f6f7;
+}
+/* ===================
+footer
+=======================*/
+.footer {
+  background: #555;
+  padding: 2.5%;
+}
+.footer_logo_wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer_logo_1 {
+  width: 25%;
+}
+.footer_logo_1 img {
+  width: 100%;
+  height: 100%;
+  margin-right: 2.5%;
+}
+.footer_logo_2 {
+  width: 5%;
+}
+.footer_logo_2 img {
+  width: 100%;
+  height: 100%;
+}
+.footer_list_wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+.footer_list_wrapper ul li {
+  margin-bottom: 10%;
+}
+.footer_list_wrapper ul li a {
+  font-size: 1rem;
+  color: #fff;
+}
+.border {
+  border-left: 2px solid #fff;
+  padding-left: 10px;
+}
+.border li:nth-last-of-type(3) {
+  margin-bottom: 1%;
+}
+.mail {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5%;
+}
+.copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #fff;
+}
+/* ===================
+レスポンシブ 
+=======================*/
+@media screen and (max-width: 1024px) {}
+
+/* ===================
+レスポンシブ 　７６８　
+=======================*/
+
+@media screen and (max-width: 768px) {
+
+  .top_right {
+    width: 50%;
+  }
+  .font1 p{
+    font-size: 2rem;
+  }
+  .font1 small {
+    font-size: 1.23rem;
+  }
+
+  /* =======================ハンバーガー＝＝＝＝＝＝ */
+
+    /* 一番目の横線.drawer */
+    header .drawer {
+    /* ↓表示させる */
+    visibility: visible; 
+    
+    width: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-top: solid 4px #aaaa;
+    cursor: pointer;
+    z-index: 100;
+  }
+  /* 2本目の横線＝＝＝＝header .drawer::before
+    3本目の横線＝＝＝＝header .drawer::after
+        ::before / ::afterを用いて表示する横線を分けている理由としては、クリックした際に2番目と3番目の横線で「×」を表示できるようにするため
+   */
+    header .drawer::before,
+    header .drawer::after {
+      content: "";
+      width: 24px;
+      display: block;
+      background: #aaa;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      /* ↓↓× を表示するスピードをtransition: all 0.5s;
+        で指定 */
+      transition: all 0.5s;
+    }
+    header .drawer::before {
+      top: 6px;
+    }
+    header .drawer::after {
+      top: 15px;
+    }
+    header .header_nav {
+      /* ナビを固定 */
+      position: fixed;
+      /* 固定位置 */
+      top: 0;
+      left: 0;
+      /* 表示を見えなくする */
+      display: none;
+      /* 固定位置＋表示幅、高さ */
+      width: 100%;
+      height: 100%;
+      
+      z-index: 50;
+      background: #fff;
+    }
+    header .header_nav ul {
+      /* ハンバーガー表示した時に縦並びにしたいから
+      ブロック要素に変換して縦並びにする */
+      display: block;
+    }
+    header .header_nav ul li {
+      /* 下に余白をつける */
+      margin: 5% auto;
+    }
+    header .header_nav ul li {
+      line-height: 3;
+      font-size: 1.75rem;
+    }
+    header .header_nav ul li.contact {
+      width: 30%;
+    }
+    /* ==========JavaScriptのCSS */
+
+    /* クリックされた場合、ハンバーガーの
+    一番上の線を表示させないようにする */
+    body.nav-open header .drawer {
+      border-top: 0;
+    }
+    body.nav-open header .drawer::before {
+      top: 9px;
+      /*  バッテンの回転させる角度 */
+      transform: rotate(-45deg);
+    }
+    body.nav-open header .drawer::after {
+      top: 9px;
+      /*  バッテンの回転させる角度 */
+      transform: rotate(45deg);
+    }
+
+    /* body.nav-open header .drawerでは、nav-openというクラスが追加された（ハンガーバーメニューがクリックされた）場合、border-topを表示させないように指定しています。 body.nav-open header .drawer::before / body.nav-open header .drawer::afterでは、表示させている2本の横線を回転させながら「×」を示すように指定しています。transform: rotate(-45deg);/ transform: rotate(45deg);
+    では、回転させる角度を設定しています。 */
+}
